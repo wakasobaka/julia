@@ -1,0 +1,46 @@
+Working with github
+
+Token is required
+https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/
+
+
+Configuring X Server
+https://techcommunity.microsoft.com/t5/windows-dev-appconsult/running-wsl-gui-apps-on-windows-10/ba-p/1493242
+export DISPLAY=$(ip route|awk '/^default/{print $3}'):0.0
+
+VcXsrv Windows X Server
+https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.20.9.0/
+
+"C:\Program Files\VcXsrv\xlaunch.exe" -run c:\projects\julia\wsl\config.xlaunch
+
+
+0. install 
+1. Install julia
+2. apt install xterm julia mc gcc clang python3 python3-pip python3-gi-cairo
+3. pip3 install matplotlib
+3. Run Julia
+   julia> ]
+   pkg> add PyPlot
+   pkg> add https://github.com/Vibof/HorizonSideRobots.jl
+   Press backspace
+   julia> 
+   
+   julia> using HorizonSideRobots
+   julia> r=Robot(animate=true)
+   julia> include("mark_kross.jl")
+   julia> mark_kross!(r)   
+
+
+https://github.com/Vibof/Organizer/blob/master/gitref.md
+https://www.julia-vscode.org/docs/stable/userguide/runningcode/
+https://julialang.org/learning/
+https://julialang.org/learning/mooc/
+https://github.com/mitmath/18S191
+https://docs.servicenow.com/bundle/rome-application-development/page/build/applications/task/create-project.html
+
+From zero to Julia! 
+https://techytok.com/from-zero-to-julia/
+
+
+DODO:
+1. Paste does not work for WSL/mc
