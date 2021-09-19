@@ -6,4 +6,7 @@
 ## Personal Access Token
 Для работы с локальным репозиторием github на своем компьютере необходимо знать:
 1. имя пользователя. это почтовый адрес
-1. 
+
+
+
+git config --global credential.helper store
