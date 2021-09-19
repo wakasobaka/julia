@@ -12,9 +12,26 @@
 
 Для получения Personal Access Token необходимо:
 1. Зайти на сайт github.com
-1. Нажать на иконку пользователя в верхнем правом углу
-<img src="press_user_icon.png" alt="User>Settings" width="200"/>
-
+1. Нажать на иконку пользователя в верхнем правом углу. <br/>
+<img src="01_press_user_icon.png" alt="User" width="100"/>
+1. Должно появиться следующее меню. В нем нужно нажать Settings <br/>
+<img src="02_press_settings.png" alt="Settings" width="200"/>
+1. Должно появиться следующее меню. В нем нужно нажать Developer settings <br/>
+<img src="03_press_developer_settings.png" alt="Developer settings" width="400"/>
+1. Появится следующее меню. В не нужно нажать Personal access tokens
+<img src="04_press_personal_access_tokens.png" alt="Personal acess tokens" width="400"/>
+1. Далее нужно нажать на Generate new token
+<img src="05_press_generate_new_token.png" alt="Generate new token" width="600"/>
+1. Появится раздел для создания нового токена
+<img src="06_new_token_creation.png" alt="New token creation" width="600"/>
+1. В это разделе необходимо заполнить следующие поля
+* Название токена Note: development (можно любое название)
+* Время, когда токен устареет. Expiration: No expiration
+* Права доступа для токена. Отметить repo. Других пунктов можно не отмечать.
+1. Далее нужно опуститься вниз страницы и на нажать на зеленую кнопку Generate token
+<img src="07_press_generate_token_button.png" alt="Press generate token" width="200"/>
+1. Github.com сгенерирует новый токен. Его нужно сохранить для последующей работы в Git
+<img src="08_save_new_token.png" alt="New token creation" width="200"/>
 
 
 # Работа с Git
