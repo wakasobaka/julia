@@ -1,5 +1,11 @@
 # Работа с github.com
 
+Инструкции от преподавателя
+
+[Организация учебного процесса на базе git](https://github.com/Vibof/Organizer/blob/master/workorg.md)
+
+[Краткая справка по необходимым для учебного процесса командам git](https://github.com/Vibof/Organizer/blob/master/gitref.md)
+
 ## Вход на сайт github.com
 Для авторизации на сайте github.com необходимо ввести:
 1. Свою почту
