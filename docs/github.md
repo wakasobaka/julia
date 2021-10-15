@@ -7,7 +7,7 @@
 
 ## Создание репозитория
 Репозиторий - это именованное версионированное хранилище файлов.
-[Создание Git репозитория](github_token.md)
+[Создание Git репозитория](github_create_repo.md)
 
 ## Github: Получение Personal Access Token
 [Получение Personal Access Token](github_token.md)
