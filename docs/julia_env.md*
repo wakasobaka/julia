@@ -1,0 +1,17 @@
+# Установка X Server
+1. На Windows необходимо установить X Server, который будет отображать графические программы WLS
+```
+VcXsrv Windows X Server
+https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.20.9.0/
+```
+2. Создать ярлык сервера с указание конфигурации
+```
+"C:\Program Files\VcXsrv\xlaunch.exe" -run config.xlaunch
+```
+
+# Настройка WSL
+1. Настройка X Server
+В файле ~/.bashrc необходимо задать переменную DISPLAY, чтобы графические программы WSL могли знали где отрисовывать свои окна
+```
+export DISPLAY=$(ip route|awk '/^default/{print $3}'):0.0
+```
