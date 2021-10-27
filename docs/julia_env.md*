@@ -10,8 +10,15 @@ https://sourceforge.net/projects/vcxsrv/files/vcxsrv/1.20.9.0/
 ```
 
 # Настройка WSL
-1. Настройка X Server
+## Настройка X Server
 В файле ~/.bashrc необходимо задать переменную DISPLAY, чтобы графические программы WSL могли знали где отрисовывать свои окна
 ```
 export DISPLAY=$(ip route|awk '/^default/{print $3}'):0.0
 ```
+## Установка необходимых пакетов WSL
+1. Установить пакеты от имени суперпользователя (root)
+```
+sudo apt install xterm julia mc gcc clang python3 python3-pip python3-gi-cairo python3-tk
+> Небходимо ввести пароль для пользователя root
+```
+2. Установка 

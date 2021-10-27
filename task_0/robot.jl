@@ -14,7 +14,7 @@ putmarker!(r)
 
 #show(r)
 
-#readline()
+readline()
 
 #while not isborder(r,side)
 #    move!(r,side)
