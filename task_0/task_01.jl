@@ -1,11 +1,4 @@
-include("common.jl")
-
-function putmarkers!(r::Robot, side::HorizonSide)
-    while !isborder(r,side)
-        move!(r,side)
-        putmarker!(r)
-    end
-end
+include("roblib.jl")
 
 function move_by_markers(r::Robot, side::HorizonSide)
     while ismarker(r)
@@ -33,7 +26,8 @@ end
 
 r=Robot(10, 10, animate=true)
 
-move_robot(r, 3, 4)
+move_robot_to_start!(r)
+move_robot!(r, 3, 4)
 make_cross!(r)
 
 #readline()
